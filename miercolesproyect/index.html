@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Marketplace de Servicios Profesionales</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Marketplace de Servicios Profesionales</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="card">
+                <h3>Diseñador Gráfico</h3>
+                <p>Creación de logos, marcas y material visual profesional.</p>
+            </div>
+            <div class="card">
+                <h3>Desarrollador Web</h3>
+                <p>Diseño y desarrollo de sitios web a medida.</p>
+            </div>
+            <div class="card">
+                <h3>Asesor Legal</h3>
+                <p>Consultoría jurídica en derecho civil y comercial.</p>
+            </div>
+            <div class="card">
+                <h3>Psicólogo</h3>
+                <p>Atención psicológica y acompañamiento personal.</p>
+            </div>
+            <div class="card">
+                <h3>Profesor Particular</h3>
+                <p>Clases de matemáticas, inglés y ciencias para todos los niveles.</p>
+            </div>
+            <div class="card">
+                <h3>Diseñador UX/UI</h3>
+                <p>Optimización de la experiencia de usuario y diseño de interfaces.</p>
+            </div>
+            <div class="card">
+                <h3>Community Manager</h3>
+                <p>Gestión de redes sociales y estrategia de contenidos.</p>
+            </div>
+            <div class="card">
+                <h3>Fotógrafo Profesional</h3>
+                <p>Sesiones fotográficas para eventos y productos.</p>
+            </div>
+            <div class="card">
+                <h3>Contador</h3>
+                <p>Asesoría contable, impuestos y finanzas.</p>
+            </div>
+            <div class="card">
+                <h3>Electricista</h3>
+                <p>Instalaciones y mantenimientos eléctricos certificados.</p>
+            </div>
+        </div>
+
+        <section>
+            <form class="formulario" action="insertar.php" method="POST">
+                <h2>Regístrate o actualiza tus datos</h2>
+                <label>Cédula:</label>
+                <input type="number" name="cedula" required>
+
+                <label>Nombre:</label>
+                <input type="text" name="nombre" required>
+
+                <label>Apellido:</label>
+                <input type="text" name="apellido" required>
+
+                <label>Dirección:</label>
+                <input type="text" name="direccion" required>
+
+                <label>Ciudad (código):</label>
+                <input type="number" name="ciudad" required>
+
+                <label>Edad:</label>
+                <input type="number" name="edad" required>
+
+                <label>Profesión:</label>
+                <input type="text" name="profesion" required>
+
+                <input type="submit" name="ingresar" value="Ingresar">
+                <input type="submit" name="consultar" value="Consultar">
+                <input type="submit" name="actualizar" value="Actualizar">
+                <input type="submit" name="eliminar" value="Eliminar">
+            </form>
+        </section>
+
+        <section id="registro-exitoso" style="color: green; font-weight: bold;">
+            <p>✔ Registro ingresado con éxito.</p>
+        </section>
+        <section id="actualizado" style="color: blue; font-weight: bold;">
+            <p>✔ Datos actualizados correctamente.</p>
+        </section>
+        <section id="eliminado" style="color: red; font-weight: bold;">
+            <p>✔ Registro eliminado correctamente.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Marketplace de Servicios Profesionales</p>
+            <a href="index.html">Volver al inicio</a> |
+            <a href="formulario.html">Llenar otro formulario</a>
+        </div>
+    </footer>
+
+</body>
+</html>
